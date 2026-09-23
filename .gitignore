@@ -1,0 +1,13 @@
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+.env
+
+.DS_Store
+
+.hf_cache/
+.ipynb_checkpoints/
+poc/.ipynb_checkpoints/
+results/
+poc/.autorouter_proxy_config.yaml

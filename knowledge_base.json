@@ -1,0 +1,23 @@
+{
+  "greetings": {
+    "hello": "Hello! How can I help you today?",
+    "hi": "Hi there! What can I do for you?",
+    "hey": "Hey! What's on your mind?",
+    "good morning": "Good morning! Hope you're having a great start to the day.",
+    "how are you": "I'm doing well, thanks for asking! How about you?",
+    "bye": "Goodbye! Have a great day.",
+    "thanks": "You're welcome!"
+  },
+  "faq": {
+    "what is your name": "I'm a routing test chatbot built with FastAPI.",
+    "what can you do": "I can answer greetings, look up facts in my knowledge base, and route complex questions to a larger model.",
+    "how does routing work": "Messages are classified and sent to either a local Ollama model or the OpenAI API depending on the rules configured in router.py.",
+    "what models do you support": "I support any local Ollama model (default llama3) and OpenAI models like gpt-3.5-turbo or gpt-4."
+  },
+  "facts": {
+    "capital of france": "The capital of France is Paris.",
+    "speed of light": "The speed of light in a vacuum is approximately 299,792,458 meters per second.",
+    "largest planet": "Jupiter is the largest planet in our solar system.",
+    "python creator": "Python was created by Guido van Rossum and first released in 1991."
+  }
+}
