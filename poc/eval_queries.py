@@ -35,6 +35,19 @@ EVAL_QUERIES = [
     # GREETING_PATTERN / COMPLEX_KEYWORDS on purpose, so a router that is
     # secretly just keyword-matching (our own baseline, or Auto Router v2
     # with keyword_tier_rules left on) can't get a free pass. Written to
+    {"message": "write a function to reverse a linked list", "expected": "SIMPLE"},
+    # MEDIUM: two code words. Code vocabulary cannot reach COMPLEX on its own.
+    {"message": "refactor this python function, fix the exception in the import, and return the result", "expected": "MEDIUM"},
+    # SIMPLE despite technical content: two technical terms score 0.125, under 0.15
+    {"message": "how do latency and throughput trade off in this service", "expected": "SIMPLE"},
+    # MEDIUM ceiling: four technical terms score 0.25, still under 0.35
+    {"message": "explain latency, throughput, concurrency, and memory in this protocol", "expected": "MEDIUM"},
+    # COMPLEX: two code words plus one reasoning phrase clears 0.35
+    {"message": "refactor this python function and think step by step about the exception in the import", "expected": "COMPLEX"},
+    # REASONING from phrases alone, on a trivial question
+    {"message": "step by step, explain your reasoning: what is 2 plus 2", "expected": "REASONING"},
+    # SIMPLE: a hard question that uses none of the listed words
+    {"message": "prove that there is no program which decides whether an arbitrary program halts", "expected": "SIMPLE"},
     # stress structural/semantic signals instead - e.g. Auto Router v2's
     # heuristic scorer (tokenCount, codePresence, reasoningMarkers,
     # technicalTerms, simpleIndicators, multiStepPatterns, questionComplexity).
